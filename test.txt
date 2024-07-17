@@ -1,2 +1,0 @@
-from ubuntu
-time is 12:28
