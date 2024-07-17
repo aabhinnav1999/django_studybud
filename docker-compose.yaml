@@ -2,6 +2,7 @@ version: "3.9"
 services:
     django_app:
         image: aabhinnavdocker/studybud:1.1
+        # image: aabhinnavdocker/studybud:3.0
         container_name: django_cont
         command: > 
           sh -c " python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
