@@ -1,1 +1,2 @@
 this is first line from laptop
+this is second line from ubuntu
