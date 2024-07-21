@@ -18,8 +18,13 @@ services:
         environment:
           MYSQL_DATABASE: 'django_db'
           MYSQL_ALLOW_EMPTY_PASSWORD: 'true'
+        volumes:
+          - /home/ubuntu/django_data:/var/lib/mysql
         healthcheck:
           test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
           interval: 10s
           timeout: 5s
           retries: 3
+
+volumes:
+  django_data:
